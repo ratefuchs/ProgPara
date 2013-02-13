@@ -1,0 +1,28 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{enumerate}
+\usepackage{graphicx}
+
+\newcommand{\same}{$\stackrel{\eta,\beta}{=}$}
+\renewcommand{\l}{$\lambda$}
+
+\begin{document}
+\section*{Lösungen zum Lambdakalkül}
+\subsection*{Aufgabe 1}
+\begin{enumerate}[1.]
+\item S K x y $\Rightarrow^3$ K y (x y) $\Rightarrow^2$ y und K I x y $\Rightarrow^2$ I y $\Rightarrow$ y.
+\item
+\begin{enumerate}[(a)]
+\item (b$\to$b$\to$c)$\to$(a$\to$b)$\to$a$\to$a$\to$c
+\item C I x y $\Rightarrow^3$  I y x $\Rightarrow$ y x.
+\item C' f x y z = B (B C) C f x y z $\Rightarrow^3$ B C (C f) x y z \\$\Rightarrow^3$ C (C f x) y z $\Rightarrow^3$ C f x z y $\Rightarrow^3$ f z x y.
+\item Mit den Ergebnissen aus (b) und (c) gilt:\\
+C' (B ($\Psi$ I) (C I)) x y z $\Rightarrow^*$ B ($\Psi$ I) (C I) z x y $\Rightarrow^3$
+$\Psi$ I (C I z) x y\\ $\Rightarrow^4$ I (C I z x) (C I z y) $\Rightarrow^*$ I (x z) (C I z y) $\Rightarrow^*$ I (x z) (y z) $\Rightarrow$ x z (y z).
+\end{enumerate}
+\end{enumerate}
+
+\end{document}

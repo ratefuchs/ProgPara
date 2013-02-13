@@ -1,0 +1,29 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{enumerate}
+\usepackage{graphicx}
+
+\newcommand{\same}{$\stackrel{\eta,\beta}{=}$}
+\renewcommand{\l}{$\lambda$}
+
+\begin{document}
+\section*{Aufgaben zum Lambdakalkül}
+\subsection*{Aufgabe 1}
+Das SKI-Kalkül verwendet die Kombinatoren S = \l x. \l y. \l z. x z (y z), K = \l x. \l y. x und I = \l x. x. Zusätzlich lassen sich die Kombinatoren C = \l f. \l x. \l y. f y x und\\ B = \l f. \l g. \l x. f (g x) definieren.
+\begin{enumerate}[1.]
+\item Zeigen Sie S K \same{} K I, indem Sie zeigen:\\
+S K x y $\Rightarrow^*$ Z und K I x y $\Rightarrow^*$ Z für den gleichen Term Z.
+\item Der Kombinator $\Psi$ ist wie folgt definiert: $\Psi$ = \l f. \l g. \l x. \l y. f (g x) (g y).
+\begin{enumerate}[(a)]
+\item Geben Sie den allgemeinsten Typ von $\Psi$ an.
+\item Zeigen Sie C I x y $\Rightarrow^*$ y x.
+\item Der Kombinator C' sei definiert durch C' = B (B C) C.\\
+Zeigen Sie: C' f x y z $\Rightarrow^*$ f z x y.
+\item Der Kombinator S kann dargestellt werden als C' (B ($\Psi$ I) (C I)).\\ Zeigen Sie, dass tatsächlich C' (B ($\Psi$ I) (C I)) x y z $\Rightarrow^*$ x z (y z).
+\end{enumerate} 
+\end{enumerate}
+
+\end{document}
