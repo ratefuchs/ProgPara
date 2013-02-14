@@ -1,0 +1,33 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{enumerate}
+\usepackage{graphicx}
+
+\newcommand{\same}{$\stackrel{\eta,\beta}{=}$}
+\renewcommand{\l}{$\lambda$}
+
+\begin{document}
+\shorthandoff{"}
+\section*{Aufgaben zu Haskell}
+\subsection*{Aufgabe 1}
+\begin{enumerate}[1.]
+\item Definieren Sie einen Datentyp, der einen binären Baum darstellt. Die Daten sollen nur in den inneren Knoten, nicht in Blättern gespeichert werden. Halten Sie den gespeicherten Datentyp polymorph.
+\end{enumerate}
+Geben Sie in den folgenden Teilaufgaben für alle geforderten Funktionen zusätzlich den allgemeinstmöglichen Typen inklusive eventuell vorhandener Typklasseneinschränkungen an.
+\begin{enumerate}[2.]
+\item Schreiben Sie eine Funktion search, die angibt, ob ein gegebenes Element in einem Baum vorkommt.
+\end{enumerate}
+Im Folgenden befassen wir uns mit binären Suchbäumen. In binären Suchbäumen gilt für jeden inneren Knoten, dass die im linken Unterbaum gespeicherten Elemente kleiner oder gleich, die im rechten Unterbaum größer oder gleich dem im Knoten gespeicherten Element sind. Nehmen Sie für die folgenden Teilaufgaben an, dass die als Parameter übergebenen Bäume die Suchbaumeigenschaft erfüllen (Sie müssen die Eigenschaft nicht nachprüfen).
+\begin{enumerate}[1.]
+\setcounter{enumi}{2}
+\item Geben Sie nun eine Funktion search' an, die angibt, ob ein gegebenes Element in einem Suchbaum vorkommt. Die Laufzeit der Funktion muss linear in der Höhe des Baumes sein.
+\item Geben Sie eine Funktion insert an, die in einen Baum ein gegebenes Element einfügt. Elemente dürfen mehrfach im Baum vorkommen. Das Ergebnis der Funktion muss wieder ein gültiger Suchbaum sein.
+\item Geben Sie eine Funktion list2Tree an, die eine (als endlich angenommene) Liste in einen binären Suchbaum umwandelt.
+\item Geben Sie eine Funktion tree2List an, die einen Baum in eine Liste umwandelt. Die ausgegebene Liste muss aufsteigend sortiert sein.
+\item Verwenden Sie die in den vorigen Teilaufgaben definierten Funktionen, um eine Funktion zu schreiben, die eine Liste sortiert.
+\end{enumerate}
+
+\end{document}
