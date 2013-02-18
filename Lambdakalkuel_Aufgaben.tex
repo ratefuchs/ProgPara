@@ -27,4 +27,13 @@ Zeigen Sie: C' f x y z $\Rightarrow^*$ f z x y.
 \end{enumerate} 
 \end{enumerate}
 
+\subsection*{Aufgabe 2}
+Die Church-Booleans waren wie folgt definiert: $c_{true}$=(\l t. \l f. t) und $c_{false}$=(\l t. \l f. f), die Church-Integer als $c_n$=(\l s. \l z. s$^n$ z).
+\begin{enumerate}
+\item Geben Sie einen Lambdaterm "not" an, der die Negation eines gegebenen Church-Booleans berechnet.
+\item Geben Sie nun (z.B. mithilfe von "not") einen Lambdaterm "even" an, der zurückgibt, ob ein gegebener Church-Integer gerade ist.
+\item Schreiben Sie einen Lambdaterm "max", der das Maximum von zwei gegebenen Church-Integern berechnet. Sie dürfen die Funktion "less\_eq" verwenden, wobei "less\_eq n m" angibt, ob $n\leq m$ gilt.
+\item Der Kombinator B sei definiert durch B = (\l f. \l g. \l x. f (g x)). Zeigen Sie, dass (\l a. \l b. \l c. B B B max max a b c) das Maximum von 3 Zahlen berechnet. Sie dürfen dazu verwenden, dass $\max(a,b,c)=\max(\max(a,b),c)$.
+\end{enumerate}
+
 \end{document}

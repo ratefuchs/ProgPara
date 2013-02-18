@@ -26,4 +26,13 @@ $\Psi$ I (C I z) x y\\ $\Rightarrow^4$ I (C I z x) (C I z y) $\Rightarrow^*$ I (
 \end{enumerate}
 \end{enumerate}
 
+\subsection*{Aufgabe 2}
+\begin{enumerate}
+\item not = (\l b. b $c_{false}$ $c_{true}$)
+\item even = (\l n. n not $c_{true}$)
+\item max = (\l n. \l m. less\_eq n m m n)
+\item (\l a. \l b. \l c. B B B max max a b c) a b c \\$\Rightarrow^3$ B B B max max a b c \\$\Rightarrow^3$ B (B max) max a b c \\$\Rightarrow^3$ B max (max a) b c\\ $\Rightarrow^3$ max (max a b) c.\\
+Nach dem Hinweis ist dies das Maximum von a, b und c.
+\end{enumerate}
+
 \end{document}
