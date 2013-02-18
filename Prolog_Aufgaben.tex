@@ -1,0 +1,29 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{enumerate}
+\usepackage{graphicx}
+
+\newcommand{\same}{$\stackrel{\eta,\beta}{=}$}
+\renewcommand{\l}{$\lambda$}
+
+\begin{document}
+\shorthandoff{"}
+\section*{Aufgaben zu Prolog}
+\subsection*{Aufgabe 1}
+\begin{enumerate}[1.]
+\item Schreiben Sie ein einstelliges Prädikat "evenLength", das angibt, ob eine Liste gerade Länge hat. Das Prädikat soll als Generator und als Tester verwendbar sein. Sie dürfen weder das Prädikat "length" noch die Prolog-Arithmetik verwenden. 
+\item Schreiben Sie ein einstelliges Prädikat "pow2Length", das angibt, ob die Länge einer Liste eine Zweierpotenz ist. Das Prädikat soll als Generator und als Tester verwendbar sein. Sie dürfen die eingebaute Funktion append(X,Y,Z) benutzen (Es gilt dabei: Z ist die Konkatenation von X und Y). Sie dürfen allerdings weder das Prädikat "length" noch die Prolog-Arithmetik verwenden. 
+\end{enumerate}
+
+\subsection*{Aufgabe 2}
+Geben Sie den allgemeinsten Unifikator der folgenden Gleichungen an:
+\begin{enumerate}[1.]
+\item f(1, P, [7,4], g(3,X)) = f(Y, Q, [Z|W], T).
+\item f(g(Y,7), [3,P], 7, g(3,4)) = f(P, Z, 7, g(3,Q)).
+\item f(L, X, Y, Z) = f(1, g(L,L), g(X,X), g(Y,Y)).
+\end{enumerate}
+
+\end{document}

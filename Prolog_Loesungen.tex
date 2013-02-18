@@ -1,0 +1,37 @@
+\documentclass{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage[ngerman]{babel}
+\usepackage{amsmath,amssymb}
+\usepackage{enumerate}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{wasysym}
+
+\newcommand{\same}{$\stackrel{\eta,\beta}{=}$}
+\renewcommand{\l}{$\lambda$}
+\newcommand{\rep}{\pointer}
+
+\begin{document}
+\shorthandoff{"}
+\lstset{language=Prolog}
+\section*{Lösungen zu Prolog}
+\subsection*{Aufgabe 1}
+\begin{lstlisting}
+% Aufgabe 1.1
+evenLength([]).
+evenLength([_|[_|Xs]]):-evenLength(Xs).
+
+% Aufgabe 1.2
+pow2Length([1]).
+pow2Length(Xs):-Xs=[1|_],append(Ys,Ys,Xs),pow2Length(Ys).
+\end{lstlisting}
+
+\subsection*{Aufgabe 2}
+\begin{enumerate}[1.]
+\item $\sigma$ = [P \rep Q, Y \rep 1, Z \rep 7, W \rep [4], T \rep g(3,X)].
+\item $\sigma$ = [P \rep g(Y,7), Z \rep [3,g(Y,7)], Q \rep 4].
+\item $\sigma$ = [L \rep 1, X \rep g(1,1), Y \rep g(g(1,1),g(1,1)), Z \rep g(g(g(1,1),g(1,1)),g(g(1,1),g(1,1)))].
+\end{enumerate}
+
+\end{document}
